@@ -13,10 +13,11 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 
 
-font_path = 'NanumGothic.ttf'
-fontprop = fm.FontProperties(fname=font_path, size=18)
-# matplotlib.rcParams['font.family'] = 'NanumGothic'
+
+fontprop = fm.FontProperties(fname='NanumGothic.ttf', size=18)
 matplotlib.rcParams['axes.unicode_minus'] = False
+# matplotlib.rcParams['font.family'] = 'NanumGothic'
+
     
 #----------------------------------------
 # 한국 주식 종목 코드를 가져오는 함수
