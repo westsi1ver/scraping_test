@@ -13,8 +13,10 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 
 
-font_path = './NanumGothic.ttf'
+font_path = 'NanumGothic.ttf'
 fontprop = fm.FontProperties(fname=font_path, size=18)
+matplotlib.rcParams['font.family'] = 'NanumGothic'
+matplotlib.rcParams['axes.unicode_minus'] = False
     
 #----------------------------------------
 # 한국 주식 종목 코드를 가져오는 함수
@@ -56,7 +58,7 @@ def get_ticker_symbol(company_name, market_type):
     return ticker_symbol
 #---------------------------------------------------------
 
-st.title("주식 정보를 가져오는 웹 앱")
+st.title("주식 정보를 가져오는 웹 앱1")
 
 # 사이드바의 폭을 조절. {width:250px;}로 지정하면 폭을 250픽셀로 지정
 st.markdown(
