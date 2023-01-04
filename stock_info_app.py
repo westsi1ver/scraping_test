@@ -15,7 +15,7 @@ import matplotlib.font_manager as fm
 
 font_path = 'NanumGothic.ttf'
 fontprop = fm.FontProperties(fname=font_path, size=18)
-matplotlib.rcParams['font.family'] = 'NanumGothic'
+# matplotlib.rcParams['font.family'] = 'NanumGothic'
 matplotlib.rcParams['axes.unicode_minus'] = False
     
 #----------------------------------------
