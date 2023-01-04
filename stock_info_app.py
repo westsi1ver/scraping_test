@@ -7,6 +7,14 @@ import datetime
 import matplotlib.pyplot as plt
 import matplotlib
 from io import BytesIO
+
+
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+
+
+font_path = './NanumGothic.ttf'
+fontprop = fm.FontProperties(fname=font_path, size=18)
     
 #----------------------------------------
 # 한국 주식 종목 코드를 가져오는 함수
@@ -87,12 +95,6 @@ if(clicked == True):
     # matplotlib을 이용한 그래프에 한글을 표시하기 위한 설정
     # matplotlib.rcParams['font.family'] = 'Malgun Gothic'
     # matplotlib.rcParams['axes.unicode_minus'] = False
-    
-    import platform
-    from matplotlib import font_manager, rc
-    plt.rcParams['axes.unicode_minus'] = False
-    if platform.system() == 'Windows':
-        rc('font', family='NanumGothic')
     
     # 선 그래프 그리기
     ax = df['Close'].plot(grid=True, figsize=(15, 5))
